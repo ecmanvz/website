@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ecem Amanvermez</title>
+    <meta name="title" content="Ecem Amanvermez">
+    <meta name="keywords" content="website, html, css, benim hakkımda">
+    <meta name="description" content="Web teknolojileri dersi için benim sitem...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+function isValid(frm)
+{
+    var adi = frm.adi.value;
+    var soyadi = frm.soyadi.value;
+    var email = frm.email.value;
+    var atpos=email.indexOf("@");
+    var dotpos=email.lastIndexOf(".");
+
+    if ( adi==null || adi=="" )
+    {
+        alert("Kullanıcı adı boş olamaz");
+        return false;
+    }
+    
+    if ( soyadi==null || soyadi=="" )
+    {
+        alert("Soyadı boş olamaz");
+        return false;
+    }
+    
+    if ( atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length )
+    {
+        alert("Geçerli email adresi girin");
+        return false;
+    }      
+    return true;
+}
+    </script>
+ 
+</head>
+
+<body>
+
+
+<header> 
+
+<div class="textbaslik">
+        <h1>Ecem Amanvermez</h1>
+        <h2>İletişim...</h2>
+    </div>
+    
+
+</header>
+
+
+<nav>
+	<ul >
+		<a href="about.html" title="Hakkımda"><li>HAKKIMDA</li></a>
+		<a href="profile.html"><li >ÖZGEÇMİŞ</li></a>
+		<a href="mycity.html"><li >ŞEHRİM</li></a>
+		<a href="miras.html"><li>MİRASIMIZ</li></a>
+		<a href="contact.html"><li>İLETİŞİM</li></a>
+		
+		<a href=""><li><img src="img/instalogo.png" alt="instagram" height="19" ></li></a>
+		<a href=""><li><img src="img/twlogo.png" alt="twitter" height="19"></li></a>
+		<a href=""><li><img src="img/fblogo.png" alt="facebook" height="19"></li></a>
+		
+	</ul>
+</nav>
+
+<article>
+
+  
+   <fieldset class="post">
+    <P><b>İLETİŞİM FORMU</b></P>
+   
+    <form name="uye_formu" action="action.php" onsubmit="return isValid(this)" method="post" >
+        <p>Ad : <input type="text" name="adi" placeholder="Adınızı Giriniz..." required></p>
+        <p>Soyad : <input type="text" name="soyadi" placeholder="Soyadınızı Giriniz..." required></p>
+         <p>E-Mail : <input type="email" name="email" required placeholder="Email Adresinizi Giriniz..." required> </p>
+       <p>Konu : </p>
+       <select name="konu" >
+          <option>Seçiniz</option>
+           <option value="1">Öneri</option>
+           <option value="2">Şikayet</option>
+           <option value="3">İstek</option>
+           <option value="4">Teşekkür</option>
+       </select>
+        <p>Mesaj : </p>
+        <textarea name="message" style="width:600px; height:200px;"></textarea><br>
+        
+        <button type="submit">Gönder</button>
+        <button type="reset" >Temizle</button>
+        
+    </form>
+    
+    </fieldset>
+    
+    
+</article>
+  
+     
+    
+
+  
+     <footer>
+     <a href="contact.html" >İletişim</a>
+    </footer>
+</body>
+</html>

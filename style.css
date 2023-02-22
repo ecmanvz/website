@@ -1,0 +1,171 @@
+body{font-family:gill sans nova light; font-size: 16px; margin: 0; }
+
+.clear{clear: both;}
+.right{float: right;}
+.left{float: left;}
+.center{text-align: center;}
+
+header{background: url('img/arkaplan.png'); height: 400px; background-position: 50%; background-size: cover;background-attachment: fixed;}
+
+
+.textbaslik{text-align: center; color: #fff;  padding-top: 140px;}
+
+h1{font-size: 50px; text-shadow: 2px 4px 12px black;}
+
+nav{text-align: center; background: #3F5039; font-size: 120%;}
+
+nav ul{margin: 0; padding: 0;}
+
+nav ul a{color: #fff;}
+
+nav ul>a:hover{font-weight: bold;}
+
+nav li{display: inline-block; list-style-type: none; padding: 7px; border-top: 2px solid #3F5039; border-bottom: 2px solid #3F5039;}
+
+nav li:hover{border-bottom: 2px solid #fff; border-top: 2px solid #fff; }
+
+
+article{padding: 20px;}
+
+.post{background-color:gainsboro; display: block; padding: 5px 10px ; margin: 15px; border: 3px inset #666; border-radius: 20px;}
+
+.aboutphoto img{
+    width:250px;
+    height:250px;
+    margin: 5px;
+     border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+figcaption{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+footer{
+    padding: 15px ; background-color: #3F5039; text-color: white;
+  text-align: center;
+
+    
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+footer a:hover{
+   font-weight: bold;
+    
+}
+}bol
+
+/*FORM CSS*/
+
+button{
+  background-color: #3F5039;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+/* MYCİTY CSS*/
+
+.fgezi{border-radius: 1000px;
+height: 260px;
+margin: 20px;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.next {
+  right: 0;
+}
+
+
+.text {
+  color: #fff;
+font-weight: bold;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 4px;
+  text-align: center;
+     
+     background-color: rgba(76, 175, 80, 0.6);
+   
+}
+
+
+.numbertext {
+  color:#fff;
+    font-weight: bold;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+/*PROFİLE CSS*/
+table, td, th {  
+  border: 1px solid #fff;
+  text-align: left;
+}
+
+table {
+    margin: 50px;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+
+
+
